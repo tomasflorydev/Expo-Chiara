@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Se busca Dev! — Selección de Personal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Top HUD: company branding, 7-phase progress bar, fullscreen toggle -->
+    <header class="top-bar" aria-label="Progreso del juego">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-name">OfiTech S.A.</span>
+      </div>
+
+      <nav class="progress-track" id="progressTrack" aria-label="Fases del proceso de selección">
+        <!-- Populated by script.js -->
+      </nav>
+
+      <div class="top-actions">
+        <button
+          type="button"
+          class="icon-btn"
+          id="restartTopBtn"
+          title="Volver al inicio"
+          aria-label="Volver al inicio"
+          hidden
+        >
+          ↺ Inicio
+        </button>
+        <button
+          type="button"
+          class="icon-btn"
+          id="fullscreenBtn"
+          title="Pantalla completa (tecla F)"
+          aria-label="Alternar pantalla completa"
+        >
+          ⛶ Pantalla completa
+        </button>
+      </div>
+    </header>
+
+    <!-- Main interactive stage -->
+    <main class="stage-container" id="stageContainer" aria-live="polite">
+      <!-- Dynamic screens rendered here by script.js -->
+    </main>
+
+    <!-- Subtle keyboard legend for classroom presentation -->
+    <footer class="shortcut-bar" id="shortcutBar">
+      <span>Atajos: <kbd>1</kbd> Opción 1</span>
+      <span><kbd>2</kbd> Opción 2</span>
+      <span><kbd>Enter</kbd> Continuar / Reintentar</span>
+      <span><kbd>F</kbd> Pantalla completa</span>
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
